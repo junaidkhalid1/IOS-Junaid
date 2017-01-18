@@ -13,6 +13,15 @@ class TableViewController: UITableViewController {
     var itemArray = ["-", "-", "-"]
     let cellIdentifiers = "TableViewController"
     
+    let apple = Apple.init(name: "Apple", photo: nil, subtitle: "Iphone", date: "March", author: "Junaid")
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "segueIdentifierName" {
+            let detailViewController = segue.destinationViewController as! ViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

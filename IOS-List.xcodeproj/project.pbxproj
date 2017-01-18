@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438739741E3013240085BA11 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438739731E3013240085BA11 /* Apple.swift */; };
+		438739761E3015820085BA11 /* itemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438739751E3015820085BA11 /* itemDetailViewController.swift */; };
 		43EACDC71E2FDFB80074033F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EACDC61E2FDFB80074033F /* AppDelegate.swift */; };
 		43EACDC91E2FDFB80074033F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EACDC81E2FDFB80074033F /* ViewController.swift */; };
 		43EACDCC1E2FDFB80074033F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EACDCA1E2FDFB80074033F /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		438739731E3013240085BA11 /* Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
+		438739751E3015820085BA11 /* itemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemDetailViewController.swift; sourceTree = "<group>"; };
 		43EACDC31E2FDFB80074033F /* IOS-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EACDC61E2FDFB80074033F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EACDC81E2FDFB80074033F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 		43EACDBA1E2FDFB80074033F = {
 			isa = PBXGroup;
 			children = (
+				438739731E3013240085BA11 /* Apple.swift */,
 				43EACDFC1E2FED210074033F /* TableViewController.swift */,
+				438739751E3015820085BA11 /* itemDetailViewController.swift */,
 				43EACDF61E2FE2D30074033F /* studentCustomCellViewTable.swift */,
 				43EACDC51E2FDFB80074033F /* IOS-List */,
 				43EACDDA1E2FDFB80074033F /* IOS-ListTests */,
@@ -266,6 +272,8 @@
 				43EACDC71E2FDFB80074033F /* AppDelegate.swift in Sources */,
 				43EACDF71E2FE2D30074033F /* studentCustomCellViewTable.swift in Sources */,
 				43EACDFD1E2FED210074033F /* TableViewController.swift in Sources */,
+				438739761E3015820085BA11 /* itemDetailViewController.swift in Sources */,
+				438739741E3013240085BA11 /* Apple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +500,7 @@
 				43EACDED1E2FDFB80074033F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43EACDEE1E2FDFB80074033F /* Build configuration list for PBXNativeTarget "IOS-ListTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				43EACDF01E2FDFB80074033F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43EACDF11E2FDFB80074033F /* Build configuration list for PBXNativeTarget "IOS-ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +518,7 @@
 				43EACDF31E2FDFB80074033F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
