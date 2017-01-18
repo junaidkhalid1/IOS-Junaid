@@ -10,6 +10,8 @@ import UIKit
 
 class itemDetailViewController: UIViewController {
 
+    var apps : Apple?
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -17,6 +19,13 @@ class itemDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = apps?.name
+        subtitleLabel.text = apps?.subtitle
+        dateLabel.text = apps?.date
+        authorLabel.text = apps?.author
+        
+        
 
         // Do any additional setup after loading the view.
     }

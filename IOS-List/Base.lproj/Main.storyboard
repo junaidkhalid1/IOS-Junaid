@@ -42,6 +42,7 @@
                                     <outlet property="cellImageView" destination="zIo-s5-hQi" id="MrW-O4-5sA"/>
                                     <outlet property="cellLabel1" destination="eZ1-Zo-gkP" id="xD3-U0-YeQ"/>
                                     <outlet property="cellLabel2" destination="ILD-Jl-KAb" id="yo9-Be-dQd"/>
+                                    <segue destination="I5q-zq-PAM" kind="show" identifier="segueIdentifierName" id="89T-wc-HIP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,28 +70,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3q-Z2-tcz">
-                                <rect key="frame" x="109" y="56" width="42" height="21"/>
+                                <rect key="frame" x="63" y="64" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxU-ac-9KU">
-                                <rect key="frame" x="102" y="101" width="42" height="21"/>
+                                <rect key="frame" x="54" y="127" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-kS-ZcL">
-                                <rect key="frame" x="102" y="168" width="42" height="21"/>
+                                <rect key="frame" x="54" y="193" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzm-1j-ZjW">
-                                <rect key="frame" x="215" y="48" width="240" height="128"/>
+                                <rect key="frame" x="209" y="74" width="240" height="245"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppv-ki-yGd">
-                                <rect key="frame" x="102" y="248" width="42" height="21"/>
+                                <rect key="frame" x="54" y="283" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +123,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B8v-Tz-Luy"/>
-                        <segue destination="I5q-zq-PAM" kind="push" identifier="segueIdentifierName" id="7AG-Pg-3E1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klP-nX-1We" userLabel="First Responder" sceneMemberID="firstResponder"/>

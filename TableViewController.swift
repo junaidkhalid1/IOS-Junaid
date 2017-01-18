@@ -10,15 +10,24 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    var itemArray = ["-", "-", "-"]
     let cellIdentifiers = "TableViewController"
     
-    let apple = Apple.init(name: "Apple", photo: nil, subtitle: "Iphone", date: "March", author: "Junaid")
+    let apple1 = Apple.init(name: "Apple1", photo: nil, subtitle: "Iphone1", date: "March1", author: "Junaid1")
+
+    let apple2 = Apple.init(name: "Apple2", photo: nil, subtitle: "Iphone2", date: "March2", author: "Junaid2")
+
+    let apple3 = Apple.init(name: "Apple3", photo: nil, subtitle: "Iphone3", date: "March3", author: "Junaid3")
+
+    
+    var itemArray = [Apple.init(name: "Apple1", photo: nil, subtitle: "Iphone1", date: "March1", author: "Junaid1"), Apple.init(name: "Apple2", photo: nil, subtitle: "Iphone2", date: "March2", author: "Junaid2"), Apple.init(name: "Apple3", photo: nil, subtitle: "Iphone3", date: "March3", author: "Junaid3")]
+
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "segueIdentifierName" {
-            let detailViewController = segue.destinationViewController as! ViewController
-            let indexPath = self.tableView.indexPathForSelectedRow
+            let detailViewController = segue.destinationViewController as! itemDetailViewController
+            let indexPath = self.tableView.indexPathForSelectedRow!
+            detailViewController.apps = self.itemArray[indexPath.row]
         }
     }
     
